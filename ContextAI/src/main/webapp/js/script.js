@@ -20,11 +20,13 @@ const LEARNING_MODE_KEY = "contextai_learning_mode";
 const dummyChats = {
 
     "Aman": [
-        { type: "other", text: "Bhai, kal ke match ka score kya था? India jeeti ya nahi? Match highlights kaha dekhu?" }
+        { type: "other", text: "Bhai, kal ke match ka score kya था? India jeeti ya nahi? Match highlights kaha dekhu?" },
+        { type: "me",    text: "Haan bhai, India jeet gayi! Highlights hotstar ya BCCI app par dekh lo." }
     ],
 
     "Priya": [
-        { type: "other", text: "What is the weather forecast for Paris next week? I need to know what clothes to pack for my trip." }
+        { type: "other", text: "What is the weather forecast for Paris next week? I need to know what clothes to pack for my trip." },
+        { type: "me",    text: "It is mostly sunny and around 22°C. Carry a light jacket just in case." }
     ],
 
     "Rahul": [
@@ -32,7 +34,8 @@ const dummyChats = {
     ],
 
     "Aditi": [
-        { type: "other", text: "¿A qué hora comienza el festival de música hoy en el centro? Necesito saber el horario de las bandas." }
+        { type: "other", text: "¿A qué hora comienza el festival de música hoy en el centro? Necesito saber el horario de las bandas." },
+        { type: "me",    text: "Comienza a las 6:00 PM. Te comparto los horarios de inmediato." }
     ],
 
     "Shivani": [
