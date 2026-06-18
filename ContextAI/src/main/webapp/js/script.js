@@ -20,35 +20,27 @@ const LEARNING_MODE_KEY = "contextai_learning_mode";
 const dummyChats = {
 
     "Aman": [
-        { type: "other", text: "Hey, can you explain API integration?" },
-        { type: "me",    text: "Sure, send me the requirements." },
-        { type: "other", text: "Bhai REST API ke baare mein baat kar raha tha, Spring Boot mein kaise karte hain yaar?" }
+        { type: "other", text: "Bhai, kal ke match ka score kya था? India jeeti ya nahi? Match highlights kaha dekhu?" }
     ],
 
     "Priya": [
-        { type: "other", text: "Let's finish the hackathon presentation today." },
-        { type: "other", text: "Sab kuch ready hai? Deadline 6 baje hai yaar!" }
+        { type: "other", text: "What is the weather forecast for Paris next week? I need to know what clothes to pack for my trip." }
     ],
 
     "Rahul": [
-        { type: "other", text: "Dependency Injection improves loose coupling." },
-        { type: "other", text: "Tujhe Spring ke @Autowired ke baare mein pata hai?" }
+        { type: "other", text: "Was sind die genauen Zutaten für ein traditionelles Wiener Schnitzel? Ich brauche das Originalrezept." }
     ],
 
     "Aditi": [
-        { type: "other", text: "Can you review this message?" },
-        { type: "me",    text: "Sure, share it!" },
-        { type: "other", text: "Bhai ye bakwaas lag raha hai kya? 😅" }
+        { type: "other", text: "¿A qué hora comienza el festival de música hoy en el centro? Necesito saber el horario de las bandas." }
     ],
 
     "Shivani": [
-        { type: "other", text: "Hackathon starts soon." },
-        { type: "other", text: "Ready ho? Aaj toh dhoom machaana hai! 🔥" }
+        { type: "other", text: "वजन घटाने के लिए सबसे अच्छा डाइट प्लान क्या है? क्या मुझे सुबह खाली पेट नींबू पानी पीना चाहिए?" }
     ],
 
     "Arjun": [
-        { type: "other", text: "Let's make it awesome." },
-        { type: "other", text: "Yaar serious ho ja, time kam hai aur kaam zyada." }
+        { type: "other", text: "म्युच्युअल फंड (Mutual Funds) मध्ये थेट गुंतवणूक कशी करायची? मला कमीत कमी रिस्क असणारा पर्याय सांग." }
     ]
 };
 

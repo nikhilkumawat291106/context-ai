@@ -17,8 +17,7 @@ public class GeminiUtil {
      * Get one free at: https://aistudio.google.com/app/apikey
      * =====================================================
      */
-    private static final String API_KEY =
-            "AQ.Ab8RN6Jk6vjDJI81ikqZQwb1XI_sBMQADPPXGqSIShlI0halkg";
+    private static final String API_KEY = System.getenv("GEMINI_API_KEY");
 
     /*
      * Gemini Model
