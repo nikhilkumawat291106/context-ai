@@ -612,6 +612,7 @@ function attachClickHandler(element, messageText) {
     element.style.cursor = "pointer";
 
     element.addEventListener("click", function (e) {
+        e.stopPropagation();
 
         // Don't trigger if user is currently selecting text
         if (window.getSelection().toString().trim().length > 0) return;
