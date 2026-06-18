@@ -39,6 +39,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             </div>
         </div>
 
+        <!-- LEARNING MODE TOGGLE -->
+        <div class="learning-mode-row">
+            <span>&#x1F4DA; Learning Mode</span>
+            <div id="learningToggle"
+                 class="learning-toggle"
+                 onclick="toggleLearningMode()"
+                 title="Learn from your reply style">
+                <div class="toggle-knob"></div>
+            </div>
+            <span id="learningBadge"
+                  class="learning-badge"
+                  style="display:none;">ON</span>
+        </div>
+
     </div>
 
     <div class="search-box">
@@ -240,6 +254,45 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
         </div>
 
+        <!-- SLANG DECODE CARD -->
+        <div id="slangDecodeCard"
+             class="slang-decode-card"
+             style="display:none;">
+
+            <div class="slang-header">
+                <span>🔍 Slang Decoder</span>
+                <button onclick="closeSlangCard()">×</button>
+            </div>
+
+            <div class="slang-word"
+                 id="slangWord">word</div>
+
+            <div class="slang-section">
+                <span class="slang-label">Meaning</span>
+                <p id="slangMeaning">—</p>
+            </div>
+
+            <div class="slang-section">
+                <span class="slang-label">Cultural Context</span>
+                <p id="slangCulture">—</p>
+            </div>
+
+            <div class="slang-intensity-row">
+                <span class="slang-label">Intensity</span>
+                <div class="intensity-track">
+                    <div id="slangIntensityBar"
+                         class="intensity-bar intensity-mild"></div>
+                </div>
+                <span id="slangIntensityLabel">Mild</span>
+            </div>
+
+            <div>
+                <span id="slangSafeTag"
+                      class="safe-tag safe-yes">✅ Safe to use</span>
+            </div>
+
+        </div>
+
         <!-- INPUT -->
         <div class="chat-input-area">
 
@@ -312,6 +365,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <h3>Select Language</h3>
 
+    <button onclick="translateTo('Hinglish')">
+        Hinglish 🇮🇳
+    </button>
+
     <button onclick="translateTo('Hindi')">
         Hindi
     </button>
@@ -350,20 +407,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <div id="messagePopup"
      class="message-popup">
 
-<div onclick="popupAction('explain')">
-    Explain
-</div>
-
-<div onclick="popupAction('translate')">
-    Translate
+<div onclick="popupAction('askai')">
+    🤖 Ask AI
 </div>
 
 <div onclick="popupAction('factcheck')">
-    Fact Check
+    ✅ Fact Check
 </div>
 
-<div onclick="popupAction('askai')">
-    Ask AI
+<div onclick="popupAction('explain')">
+    💡 Explain
+</div>
+
+<div onclick="popupAction('translate')">
+    🌐 Translate
 </div>
 
 </div>
