@@ -1,2 +1,2 @@
-com\contextai\controller\AiServlet.class
-com\contextai\util\GeminiUtil.class
+com/contextai/util/GeminiUtil.class
+com/contextai/controller/AiServlet.class

@@ -149,6 +149,18 @@ public class GeminiUtil {
                         + "[One line explanation]\n\n"
                         + userPrompt;
 
+            case "scamcheck":
+                return "You are ContextAI. Analyze the message below for scam, phishing, fake offer, fake banking message, fake OTP request, suspicious link, investment fraud, or social engineering. "
+                        + "Return ONLY this exact 6-line format and nothing else. "
+                        + "Replace XX with a number from 0 to 100 and choose Low, Medium, or High.\n"
+                        + "🛡 Scam Risk: XX% (Low / Medium / High)\n"
+                        + "Why?\n"
+                        + "• Short reason 1\n"
+                        + "• Short reason 2\n"
+                        + "✅ Verify through official source.\n"
+                        + "❌ Don't click suspicious links or share OTP/passwords.\n\n"
+                        + userPrompt;
+
             case "translate_smart":
                 /*
                  * Enhanced cultural translation.
