@@ -82,7 +82,7 @@
 
                         <div class="contact-details">
                             <h4>Rahul</h4>
-                            <p>Was sind die genauen Zutaten fü.../p>
+                            <p>Was sind die genauen Zutaten fü...</p>
                         </div>
 
                         <div class="contact-meta">
@@ -132,6 +132,21 @@
 
                         <div class="contact-meta">
                             <span class="msg-count">2</span>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-item" onclick="openChat('Rohit')">
+
+                        <div class="contact-avatar">R</div>
+
+                        <div class="contact-details">
+                            <h4>Rohit</h4>
+                            <p>Hi! Congratulations 🎉 Your SBI KYC...</p>
+                        </div>
+
+                        <div class="contact-meta">
+                            <span class="msg-count">3</span>
                         </div>
 
                     </div>
@@ -417,7 +432,7 @@
 
         </div>
 
-        <script src="js/script.js"></script>
+        <script src="js/script.js?v=2"></script>
 
     </body>
 

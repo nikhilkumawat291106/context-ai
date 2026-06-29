@@ -44,6 +44,12 @@ const dummyChats = {
 
     "Arjun": [
         { type: "other", text: "म्युच्युअल फंड (Mutual Funds) मध्ये थेट गुंतवणूक कशी करायची? मला कमीत कमी रिस्क असणारा पर्याय सांग." }
+    ],
+
+    "Rohit": [
+        { type: "other", text: "Hi! Congratulations 🎉 Your SBI KYC has expired. Your account will be blocked within 2 hours. Update it immediately here: https://sbi-secure-verification.xyz/" },
+        { type: "other", text: "You have won an Amazon Gift Card worth ₹25,000! Claim your reward now before it expires: https://amazon-rewards-free.click/" },
+        { type: "other", text: "Bro, is this your photo? 😳 I found it online. Check quickly: https://drive-photo-view.xyz/" }
     ]
 };
 
@@ -144,6 +150,13 @@ function loadMessages(contactName) {
     chatMessages.innerHTML = "";
 
     const messages = dummyChats[contactName] || [];
+
+    if (messages.length === 0) {
+        const placeholder = document.createElement("div");
+        placeholder.classList.add("message", "other-message");
+        placeholder.innerText = "No messages available for " + contactName + ".";
+        chatMessages.appendChild(placeholder);
+    }
 
     messages.forEach(msg => {
 
